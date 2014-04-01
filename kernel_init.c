@@ -2,7 +2,7 @@
 #include "hal.h"
 
 void KernelInit() {
+	HalSetupMemory();
 	PayloadInit();
-	while(1){
-	}
+	HalHaltCPU();
 }

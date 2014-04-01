@@ -1,7 +1,7 @@
 
 ARMGNU ?= arm-linux-gnueabi
 
-CFLAGS = -Wall -O3 -nostdlib -nostartfiles -ffreestanding -mcpu=cortex-a9 -std=gnu99 -marm -mthumb-interwork
+CFLAGS = -Wall -pedantic -O3 -nostdlib -nostartfiles -ffreestanding -mcpu=cortex-a9 -std=gnu99 -marm -mthumb-interwork
 OBJS = kernel_init.o hal.o payload.o start.o
 LIBGCC = /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/libgcc.a
 
